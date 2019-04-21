@@ -10,7 +10,7 @@ public class EndsWith7Test {
 	@Test
 	public void testToString() {
 		EndsWith7 seven = new EndsWith7();
-		// add your name to the expected string, after the all the other names in the form John Smith\n
+		// add your name to the expected string, after the all the other names in the form "John Smith, "
 		assertEquals("EndsWith7 [names=]", seven.toString());
 	}
 

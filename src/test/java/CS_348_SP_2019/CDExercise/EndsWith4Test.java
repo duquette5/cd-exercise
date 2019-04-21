@@ -11,7 +11,7 @@ public class EndsWith4Test {
 	@Test
 	public void testToString() {
 		EndsWith4 four = new EndsWith4();
-		// add your name to the expected string, after the all the other names in the form John Smith\n
+		// add your name to the expected string, after the all the other names in the form "John Smith, "
 		assertEquals("EndsWith4 [names=]", four.toString());
 	}
 

@@ -11,7 +11,7 @@ public class EndsWith8Test {
 	@Test
 	public void testToString() {
 		EndsWith8 eight = new EndsWith8();
-		// add your name to the expected string, after the all the other names in the form John Smith\n
+		// add your name to the expected string, after the all the other names in the form "John Smith, "
 		assertEquals("EndsWith8 [names=]", eight.toString());
 
 	}

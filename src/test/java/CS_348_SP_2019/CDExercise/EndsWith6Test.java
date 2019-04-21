@@ -10,7 +10,7 @@ public class EndsWith6Test {
 	@Test
 	public void testToString() {
 		EndsWith6 six = new EndsWith6();
-		// add your name to the expected string, after the all the other names in the form John Smith\n
+		// add your name to the expected string, after the all the other names in the form "John Smith, "
 		assertEquals("EndsWith6 [names=]", six.toString());
 	}
 
