@@ -1,9 +1,9 @@
-package CS_348_SP_2019.CIExercise;
+package CS_348_SP_2019.CDExercise;
 
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
-import CS_348_SP_2019.CIExercise.EndsWith7;
+import CS_348_SP_2019.CDExercise.EndsWith7;
 
 public class EndsWith7Test {
 

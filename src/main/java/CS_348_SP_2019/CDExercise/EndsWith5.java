@@ -1,19 +1,19 @@
-package CS_348_SP_2019.CIExercise;
+package CS_348_SP_2019.CDExercise;
 
-public class EndsWith9 {
-	
+public class EndsWith5 {
+
 	String names;
 
-	public EndsWith9()  {
+	public EndsWith5()  {
 		names = "";
 		// add your name here in the form of a line that looks like:
 		// names+= "John Smith\n";
-
+		
 	}
 
 	@Override
 	public String toString() {
-		return "EndsWith9 [names=" + names + "]";
+		return "EndsWith5 [names=" + names + "]";
 	}
 
 }

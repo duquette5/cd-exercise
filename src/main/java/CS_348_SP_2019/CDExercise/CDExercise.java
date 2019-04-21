@@ -1,13 +1,14 @@
-package CS_348_SP_2019.CIExercise;
+package CS_348_SP_2019.CDExercise;
 
 /**
- * Continuous Integration Example
- * testing private repository with Travis
+ * Continuous Deployment Example
+ * testing repository with Travis
+ * deploying on Heroku
  * 
  * @author Karl R. Wurst
  *
  */
-public class CIExercise 
+public class CDExercise 
 {
     public static void main(String[] args)
     {

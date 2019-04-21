@@ -1,10 +1,10 @@
-package CS_348_SP_2019.CIExercise;
+package CS_348_SP_2019.CDExercise;
 
-public class EndsWith0 {
+public class EndsWith1 {
 	
 	String names;
 
-	public EndsWith0()  {
+	public EndsWith1()  {
 		names = "";
 		// add your name here in the form of a line that looks like:
         // names+= "John Smith\n";
@@ -13,7 +13,8 @@ public class EndsWith0 {
 
 	@Override
 	public String toString() {
-		return "EndsWith0 [names="+ names +"]";
+		return "EndsWith1 [names=" + names + "]";
 	}
 
 }
+

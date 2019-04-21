@@ -1,18 +1,20 @@
 
-package CS_348_SP_2019.CIExercise;
+package CS_348_SP_2019.CDExercise;
 
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
-import CS_348_SP_2019.CIExercise.EndsWith2;
+import CS_348_SP_2019.CDExercise.EndsWith8;
 
-public class EndsWith2Test {
+public class EndsWith8Test {
 
 	@Test
 	public void testToString() {
-		EndsWith2 two = new EndsWith2();
+		EndsWith8 eight = new EndsWith8();
 		// add your name to the expected string, after the all the other names in the form John Smith\n
-		assertEquals("EndsWith2 [names=Karl Wurst\n]", two.toString());
+		assertEquals("EndsWith8 [names=]", eight.toString());
+
 	}
 
 }
+

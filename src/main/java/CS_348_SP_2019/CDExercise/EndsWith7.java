@@ -1,4 +1,4 @@
-package CS_348_SP_2019.CIExercise;
+package CS_348_SP_2019.CDExercise;
 public class EndsWith7 {
 	
 	String names;

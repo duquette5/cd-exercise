@@ -33,9 +33,9 @@ test {
 
 jar {
     manifest {
-        attributes 'Main-Class': 'CS_348_SP_2019.CIExercise.CIExercise'
+        attributes 'Main-Class': 'CS_348_SP_2019.CDExercise.CDExercise'
     }
 }
 
 // Define the main class for the application
-mainClassName = 'CS_348_SP_2019.CIExercise.CIExercise'
+mainClassName = 'CS_348_SP_2019.CDExercise.CDExercise'

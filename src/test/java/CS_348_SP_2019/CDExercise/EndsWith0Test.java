@@ -1,9 +1,9 @@
-package CS_348_SP_2019.CIExercise;
+package CS_348_SP_2019.CDExercise;
 
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
-import CS_348_SP_2019.CIExercise.EndsWith0;
+import CS_348_SP_2019.CDExercise.EndsWith0;
 
 public class EndsWith0Test {
 

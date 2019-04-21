@@ -1,17 +1,19 @@
-package CS_348_SP_2019.CIExercise;
+
+package CS_348_SP_2019.CDExercise;
 
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
-import CS_348_SP_2019.CIExercise.EndsWith6;
+import CS_348_SP_2019.CDExercise.EndsWith3;
 
-public class EndsWith6Test {
+public class EndsWith3Test {
 
 	@Test
 	public void testToString() {
-		EndsWith6 six = new EndsWith6();
+		EndsWith3 three = new EndsWith3();
 		// add your name to the expected string, after the all the other names in the form John Smith\n
-		assertEquals("EndsWith6 [names=]", six.toString());
+		assertEquals("EndsWith3 [names=]", three.toString());
+
 	}
 
 }
