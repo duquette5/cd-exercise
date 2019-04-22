@@ -1,7 +1,7 @@
 package CS_348_SP_2019.CDExercise;
 
 public class EndsWith1 {
-	
+
 	String names;
 
 	public EndsWith1()  {
@@ -19,4 +19,3 @@ public class EndsWith1 {
 	}
 
 }
-
