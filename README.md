@@ -1,14 +1,16 @@
-[![Build Status](https://travis-ci.org/cs-worcester-cs-348-sp-2019/ci-exercise.svg?branch=master)](https://travis-ci.org/cs-worcester-cs-348-sp-2019/ci-exercise)
+[![Build Status](https://travis-ci.org/cs-worcester-cs-348-sp-2019/cd-exercise.svg?branch=master)](https://travis-ci.org/cs-worcester-cs-348-sp-2019/cd-exercise.svg?branch=master)
 
-*Version 2019-Spring-1.0-Final, Revised 17 April 2019*
+*Version 2019-Spring-1.0-Final, Revised 21 April 2019*
 ### *CS-348 01, 02, 03 &mdash; Spring 2019*
 
-# Continuous Integration Exercise
+# Continuous Deployment Exercise
+
+This exercise is similar to the Continuous Integration Exercise, but takes it one step further and deploys the working code, as a web app running on the [Heroku](https://heroku.com) service. Heroku lets you continuously deploy apps as soon as the code has been changed, built, tested, reviewed and merged.
 
 ## Set up your Repository
 
 ### Fork the Repository
-[https://github.com/cs-worcester-cs-348-sp-2019/ci-exercise](https://github.com/cs-worcester-cs-348-sp-2019/ci-exercise)
+[https://github.com/cs-worcester-cs-348-sp-2019/cd-exercise](https://github.com/cs-worcester-cs-348-sp-2019/cd-exercise)
 
 ### 1. Clone the Repository
 
@@ -26,20 +28,42 @@ gradle clean build
 ```
 
 ### 4. View Travis CI Builds
-[https://travis-ci.org/cs-worcester-cs-348-sp-2019/ci-exercise/](https://travis-ci.org/cs-worcester-cs-348-sp-2019/ci-exercise)
+[https://travis-ci.org/cs-worcester-cs-348-sp-2019/cd-exercise/](https://travis-ci.org/cs-worcester-cs-348-sp-2019/cd-exercise)
 
 Be sure to look at the tabs `Current`, `Branches`, `Build History`, and `Pull Requests`.
 
-### 5. Look at the Travis Configuration
-Look at the `.travis.yml` file in the CIExercise
+### 5. View Heroku Deployment
+The most current merged build is deployed to 
+[https://cs-348-cd-exercise.herokuapp.com/](https://cs-348-cd-exercise.herokuapp.com/)
 
-### 6. Look at the Git Configuration
-Look at the `.gitignore` file in the CIExercise
+### 6. Heroku Configuration
+***You do not need to create a Heroku account for this exercise. Just read the information and view the screen shots below.***
 
-### 7. Look at the `README.me` File
-Look at the HTML source for the badge on the top line.
+Heroku requires that you make an account. You can deploy applications for free as long as you are willing to have Heroku shut them down after a period of inactivity. There will be a delay for them to start back up (about 20 seconds). You can keep applications running by paying.
 
-## Modify the CIExercise to Include your Name
+You can connect your Heroku account to a GitHub repository:
+![Heroku header](images/heroku-header.png)
+
+And set Heroku to automatically deploy from the master branch (after CI has passed):
+![Heroku deployment](images/heroku-deployment.png)
+
+The dashboard will show you the status of the latest activity:
+![Heroku activity](images/heroku-activity.png)
+
+### 7. Look at the `Procfile` File
+The `Procfile` is used by Heroku to determine how to run the program:
+
+```
+web: java -Dserver.port=$PORT $JAVA_OPTS -jar build/libs/cs-348-cd-exercise.jar
+```
+
+It is telling Heroku to execute the jar file as a web process, passing it a server port to listen for connections on.
+
+## Trying out the Continuous Integration/Continuous Deployment process
+
+***This is the same process as the CI Exercise with the addition of checking the deployed application to see that the changes show up.***
+
+### Modify the CDExercise to Include your Name
 
 I am *intentionally* not repeating all of the Git and GitHub commands for you here. You should be getting used to what you need to do. If you cannot remember how, do the following steps ***in order***:
 
@@ -54,17 +78,30 @@ Replace `yourname` with your own name.
 ### 2. Edit the code
 Based on the last digit of your WSU Student ID, edit the appropriate `EndsWith` class. For example, my ID ends with `2`, so I edited the `EndsWith2.java` file. Look at `EndsWith2.java` as an example for what to do.
 
+***Note that I have changed the code to use `, ` as a separator between names instead of `\n` because of the way the HTML display works.***
+
 ### 3. Build and test the code with Gradle
 
 The test will fail because you have not updated the test file for the class you edited.
 
 Go update the test for the code you just wrote and test again.
 
-### 4. Run the JAR File
+***Note that I have changed the code to use `, ` as a separator between names instead of `\n` because of the way the HTML display works.***
+
+### 4. Run the application
 
 ```
-java -jar build/libs/CS-348-ci-exercise.jar
+gradle bootrun
 ```
+
+Wait until you see this message:
+
+```
+2019-04-22 07:31:36.712  INFO 33423 --- [  restartedMain] CS_348_SP_2019.CDExercise.Application    
+: Started Application in 2.603 seconds (JVM running for 3.13)
+```
+
+View the running application on [http://localhost:8080](http://localhost:8080)
 
 ### 5. Add your code and commit your changes
 
@@ -82,11 +119,13 @@ Make sure you are pushing to your branch.
 
 Note that you cannot make a pull request until Travis has run your build, and your tests are successful.
 
-See the [branch protection rule](https://github.com/cs-worcester-cs-348-sp-2019/ci-exercise/settings/branch_protection_rules/5045241) to see how this was done. 
-
 ### 9. Go to the original repository and approve someone else's pull request
 
 ### 10. Check Travis
+
+### 11. Check the running app on Heroku
+[https://cs-348-cd-exercise.herokuapp.com/](https://cs-348-cd-exercise.herokuapp.com/)
+
 
 # Reference Material
 
