@@ -6,14 +6,11 @@ public class EndsWith7 {
 	public EndsWith7()  {
 		names = "";
 		// add your name here in the form of a line that looks like:
- add-JamesDenesha
 		 names+= "James Denesha, ";
 
 		// names+= "John Smith, ";
-		
+		names += "Samantha Tran, ";
 		names+= "Tim Mesite, ";
- master
-
 	}
 
 	@Override
