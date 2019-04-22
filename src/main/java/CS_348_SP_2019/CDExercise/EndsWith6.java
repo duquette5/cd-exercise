@@ -12,6 +12,7 @@ public class EndsWith6 {
 
 
         names += "Chris Radkowski, ";
+        names += "Shruti Nagpal, ";
 
 	}
 
