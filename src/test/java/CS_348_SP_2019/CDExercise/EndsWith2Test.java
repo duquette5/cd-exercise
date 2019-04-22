@@ -12,7 +12,7 @@ public class EndsWith2Test {
 	public void testToString() {
 		EndsWith2 two = new EndsWith2();
 		// add your name to the expected string, after the all the other names in the form "John Smith, "
-		assertEquals("EndsWith2 [names=Karl Wurst, ]", two.toString());
+		assertEquals("EndsWith2 [names=Karl Wurst, Yesenia Mercedes-Nunez, ]", two.toString());
 	}
 
 }
