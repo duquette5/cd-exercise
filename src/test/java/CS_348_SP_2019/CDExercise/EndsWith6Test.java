@@ -11,8 +11,8 @@ public class EndsWith6Test {
 	public void testToString() {
 		EndsWith6 six = new EndsWith6();
 		// add your name to the expected string, after the all the other names in the form "John Smith, "
-		assertEquals("EndsWith6 [names= Oresti Duro,]", six.toString());
-		assertEquals("EndsWith6 [names=Chris Radkowski, ]", six.toString());
+		assertEquals("EndsWith6 [names= Oresti Duro, Chris Radkowski, ]", six.toString());
+		
 	}
 
 }

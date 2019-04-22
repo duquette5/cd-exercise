@@ -5,9 +5,11 @@ public class EndsWith6 {
 	String names;
 
 	public EndsWith6()  {
-		names = "Oresti Duro,";
+		names = "Oresti Duro, ";
 		// add your name here in the form of a line that looks like:
 		// names+= "John Smith, ";
+
+
 
         names += "Chris Radkowski, ";
 
