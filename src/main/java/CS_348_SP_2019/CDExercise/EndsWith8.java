@@ -11,6 +11,7 @@ public class EndsWith8 {
 		names += "Gloris Pina, ";
 		names += "Kyle Quadarella, ";
 		names += "Tyler Rego, ";
+		names += "Michael Duquette, ";
 		names += "James Blash, ";
 	}
 
