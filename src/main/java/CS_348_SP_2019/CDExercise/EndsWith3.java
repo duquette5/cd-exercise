@@ -9,6 +9,7 @@ public class EndsWith3 {
 		// add your name here in the form of a line that looks like:
 		// names+= "John Smith, ";
 		names += "Mia Rogers, ";
+		names += "Andrew Finneran, ";
 
 	}
 	
