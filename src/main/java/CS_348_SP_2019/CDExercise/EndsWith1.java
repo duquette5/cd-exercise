@@ -10,6 +10,7 @@ public class EndsWith1 {
  		// names+= "John Smith, ";
 		names += "Khoa Nguyen, ";
 		names += "Kat Law, ";
+		names += "Thomas Rokicki, ";
 
 	}
 
